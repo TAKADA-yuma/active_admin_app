@@ -73,3 +73,4 @@ end
 gem 'activeadmin'
 
 gem 'sassc'
+gem 'devise'
