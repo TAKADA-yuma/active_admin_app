@@ -10,7 +10,7 @@ ActiveAdmin.register Submit do
   # or
   #
   permit_params do
-    permitted = [:question, :date]
+    permitted = [:question, :date, :answer]
     permitted << :other if params[:action] == 'create' && current_user.admin?
     permitted
   end
