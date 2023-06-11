@@ -9,6 +9,9 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <header>
+    <%= link_to "講師はこちら", admin_root_path%>
+  </header>
 
   <body>
     <%= yield %>

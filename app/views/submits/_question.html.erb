@@ -1,0 +1,11 @@
+<div class="question-container">
+  <h2 class="question-text"><%= question.question %></h2>
+  <p class="question-date">期限：<%= ( @date + question.date.to_i).month %>/<%= ( @date + question.date.to_i).day %></p>
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+<p>
+【回答】
+</p>
+  <p>
+  <h2 class="question-text"><%= question.answer %></h2>
+  </p>
+</div>
