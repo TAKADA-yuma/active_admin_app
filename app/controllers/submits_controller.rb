@@ -11,14 +11,11 @@ class SubmitsController < ApplicationController
         redirect_to root_path
     end
 
-    def update
-    @submit = Submit.find(params[:id])
-    binding.pry
-    if @submit.update(submit_params)
-        redirect_to root_path, notice: "Submit was successfully updated."
-    else
-        render :edit
-    end
+    def destroy
+        # binding.pry
+        @submit = Submit.find(params[:id])
+        @submit.destroy
+        redirect_to root_path
     end
 
     def submit_params
