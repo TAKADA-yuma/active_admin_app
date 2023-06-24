@@ -1,4 +1,5 @@
 class SubmitsController < ApplicationController
+    
     def index
         @submits = Submit.all
         @submit = Submit.new
